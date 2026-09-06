@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valerie - Portfolio</title>
+
+  <!-- CDN Bootstrap 5.3 & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Polices Google Fonts (Outfit, Plus Jakarta Sans & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Feuille de style personnalisée -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-body-custom text-white">
+
+  <!-- ========================================================================= -->
+  <!-- BARRE DE NAVIGATION (NAVBAR BOOTSTRAP 5) -->
+  <!-- ========================================================================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-nav-custom sticky-top border-bottom border-white-5 py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="#hero">
+        <img src="Images/profil1.jpeg" alt="Alexandre Dubois" class="rounded-circle border border-white-10" width="40" height="40" style="object-fit: cover;">
+        <div>
+          <span class="fw-bold fs-6 d-block text-white">Ralijaona Valérie</span>
+          <span class="text-secondary font-mono small">Portfolio Community Manager</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-white-10" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-lg-2 my-3 my-lg-0">
+          <li class="nav-item"><a class="nav-link font-mono small text-blue-400" href="#hero">01. Accueil</a></li>
+          <li class="nav-item"><a class="nav-link font-mono small text-secondary" href="#about">02. À Propos</a></li>
+          <li class="nav-item"><a class="nav-link font-mono small text-secondary" href="#skills">03. Compétences</a></li>
+          <li class="nav-item"><a class="nav-link font-mono small text-secondary" href="#projects">04. Projets</a></li>
+          <li class="nav-item"><a class="nav-link font-mono small text-secondary" href="#contact">06. Contact</a></li>
+        </ul>
+        <!-- <a href="#contact" class="btn btn-primary-custom ms-lg-3 font-mono small px-3 py-2">
+          Me Contacter <i class="bi bi-arrow-right ms-1"></i>
+        </a>-->
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================= -->
+  <!-- 01. SECTION HERO (ACCUEIL) -->
+  <!-- ========================================================================= -->
+  <section id="hero" class="container py-5 my-lg-4">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <!-- Badge Disponibilité -->
+        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-card-custom border border-white-10 font-mono small text-emerald-400 mb-4">
+          <span class="dot-pulse"></span>
+          <span>Disponible pour nouveaux projets</span>
+        </div>
+
+        <h1 class="display-4 fw-bold tracking-tight text-white mb-3 slide-in">
+          Community Manager <span class="fst-italic text-secondary fw-light">Marketing digital</span>
+        </h1>
+
+        <p class="lead text-secondary mb-4 pe-lg-4 fs-6">
+          Stratégie digitale, créativité et contenu pour faire grandir votre marque.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mb-5">
+          <a href="#projects" class="btn btn-primary-custom px-4 py-3 font-mono small">
+            Explorer les projets <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <!-- Métriques Clés
+        a revoir 
+        -->
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card-custom p-3 text-center">
+              <div class="fs-2 fw-bold text-blue-400 font-mono">6+</div>
+              <div class="text-secondary small font-mono">Années d'exp.</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card-custom p-3 text-center">
+              <div class="fs-2 fw-bold text-blue-400 font-mono">40+</div>
+              <div class="text-secondary small font-mono">Projets livrés</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 text-center">
+        <div class="position-relative d-inline-block">
+          <div class="hero-glow-bg"></div>
+          <img src="images/profil2.jpeg" alt="valerie" class="img-fluid rounded-4 border border-white-10 shadow-lg position-relative z-1 hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 02. SECTION À PROPOS -->
+  <!-- ========================================================================= -->
+  <section id="about" class="container py-5">
+    <div class="mb-5">
+      <h2 class="display-5 fw-bold text-white tracking-tight">À Propos & <span class="fst-italic text-secondary fw-light">Profil</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <div class="card-custom p-4 text-center">
+          <img src="Images/profil4.jpeg" alt="Portrait" class="img-fluid rounded-4 mb-3" style="width: 100%; height: 350px; object-fit: cover;">
+          <h4 class="fw-bold text-white mb-1">Ralijaona Valérie</h4>
+          <p class="text-blue-400 font-mono small mb-3">Community Manager</p>
+          <a href="CV/CVProfessionnelCommunitymanager.pdf" target="_blank" class="btn btn-primary-custom w-100 font-mono small py-2">
+            <i class="bi bi-filetype-pdf me-2"></i>Consulter le CV
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="card-custom p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h3 class="fs-4 fw-bold text-white mb-3">Allier rigueur technique et perfection visuelle</h3>
+            <p class="text-secondary leading-relaxed mb-3">
+              Dotée d’un bon sens de la communication, de la créativité et de l’organisation, je maîtrise la création de contenus, la gestion des réseaux sociaux.             </p>
+            <p class="text-secondary leading-relaxed mb-4">
+              Adaptable et motivée, je souhaite mettre mes compétences au service d’une entreprise afin de développer sa visibilité, renforcer son image de marque et contribuer à ses objectifs commerciaux.            </p>
+          </div>
+
+          <div class="row g-3 pt-3 border-top border-white-5">
+            <div class="col-sm-6">
+              <div class="p-3 rounded-3 bg-card-custom border border-white-5">
+                <i class="bi bi-lightning-charge text-blue-400 fs-4 mb-2 d-block"></i>
+                <h5 class="fs-6 fw-bold text-white">Performance</h5>
+                <p class="text-secondary small mb-0">Community Management, marketing digital et hôtellerie.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 rounded-3 bg-card-custom border border-white-5">
+                <i class="bi bi-shield-check text-emerald-400 fs-4 mb-2 d-block"></i>
+                <h5 class="fs-6 fw-bold text-white">Qualiter</h5>
+                <p class="text-secondary small mb-0">Créativité, Organisation, Autonomie, Esprit d'équipe.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 03. SECTION COMPÉTENCES -->
+  <!-- ========================================================================= -->
+  <section id="skills" class="container py-5">
+    <div class="mb-5">
+      <h2 class="display-5 fw-bold text-white tracking-tight">Compétences <span class="fst-italic text-secondary fw-light">professionnelles</span></h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-6">
+        <div class="card-custom p-4">
+          <div class="d-flex align-items-center gap-2 mb-4">
+            <i class="bi bi-sun text-emerald-400 fs-5"></i>
+            <h3 class="fs-5 fw-bold text-white mb-0">Compétences detaillés</h3>
+          </div>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between font-mono small mb-1">
+              <span>Gestion des réseaux sociaux</span>
+              <span class="text-emerald-400">90%</span>
+            </div>
+            <div class="progress progress-custom">
+              <div class="progress-bar bg-emerald" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between font-mono small mb-1">
+              <span>Gestion et organisation des tâches</span>
+              <span class="text-emerald-400">85%</span>
+            </div>
+            <div class="progress progress-custom">
+              <div class="progress-bar bg-emerald" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between font-mono small mb-1">
+              <span>Gestion des fichiers et documents</span>
+              <span class="text-emerald-400">80%</span>
+            </div>
+            <div class="progress progress-custom">
+              <div class="progress-bar bg-emerald" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card-custom p-4">
+          <div class="d-flex align-items-center gap-2 mb-4">
+            <i class="bi bi-wrench text-blue-400 fs-5"></i>
+            <h3 class="fs-5 fw-bold text-white mb-0">Outils</h3>
+          </div>
+          
+          <div class="mb-3">
+            <div class="d-flex justify-content-between font-mono small mb-1">
+              <span>Google (Mail, Drive, GSheet, Agenda)</span>
+              <span class="text-blue-400">90%</span>
+            </div>
+            <div class="progress progress-custom">
+              <div class="progress-bar bg-blue" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between font-mono small mb-1">
+              <span>Microsoft (Teams, Word, PowerPoint, Excel)</span>
+              <span class="text-blue-400">92%</span>
+            </div>
+            <div class="progress progress-custom">
+              <div class="progress-bar bg-blue" style="width: 92%"></div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between font-mono small mb-1">
+              <span>Canva</span>
+              <span class="text-blue-400">75%</span>
+            </div>
+            <div class="progress progress-custom">
+              <div class="progress-bar bg-blue" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between font-mono small mb-1">
+              <span>Capcut</span>
+              <span class="text-blue-400">75%</span>
+            </div>
+            <div class="progress progress-custom">
+              <div class="progress-bar bg-blue" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between font-mono small mb-1">
+              <span>IA Tools (Chat GPT, Gemini, Fal.ia)</span>
+              <span class="text-blue-400">85%</span>
+            </div>
+            <div class="progress progress-custom">
+              <div class="progress-bar bg-blue" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 04. SECTION PROJETS -->
+  <!-- ========================================================================= -->
+  <section id="projects" class="container py-5">
+    <div class="mb-5">
+      <h2 class="display-5 fw-bold text-white tracking-tight">Projets <span class="fst-italic text-secondary fw-light">Sélectionnés</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Carte Projet 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-custom h-100 overflow-hidden d-flex flex-column">
+          <div class="project-img-wrapper position-relative">
+            <img src="Images/Parom.png" class="img-fluid project-img" alt="Pulse Analytics">
+            <span class="badge bg-card-custom border border-white-10 text-blue-400 position-absolute top-0 end-0 m-3 font-mono">Nova Family</span>
+          </div>
+          <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+            <div>
+              <h3 class="fs-5 fw-bold text-white mb-2">Responsable Marketing</h3>
+              <p class="text-secondary small mb-3">Gestion des posts sur réseaux sociaux et des tâches administratives. Planification du calendrier éditorial et création de contenus.</p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge bg-card-custom border border-white-5 font-mono text-secondary">Google</span>
+                <span class="badge bg-card-custom border border-white-5 font-mono text-secondary">Reseaux sociaux</span>
+                <span class="badge bg-card-custom border border-white-5 font-mono text-secondary">Posts</span>
+              </div>
+            </div>
+            <a href="https://arom.bio/" target="_blank" class="btn btn-secondary-custom w-100 font-mono small py-2">
+              Détails du projet <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte Projet 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-custom h-100 overflow-hidden d-flex flex-column">
+          <div class="project-img-wrapper position-relative">
+            <img src="Images/coconut.jpg" class="img-fluid project-img" alt="Aura Studio">
+            <span class="badge bg-card-custom border border-white-10 text-purple-400 position-absolute top-0 end-0 m-3 font-mono">Coconut Resort</span>
+          </div>
+          <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+            <div>
+              <h3 class="fs-5 fw-bold text-white mb-2">Marketing Manager</h3>
+              <p class="text-secondary small mb-3">Développer la visibilité, promouvoir les services et attirer les clients.</p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge bg-card-custom border border-white-5 font-mono text-secondary">Stratégie marketing</span>
+                <span class="badge bg-card-custom border border-white-5 font-mono text-secondary">Développement commercial</span>
+                <span class="badge bg-card-custom border border-white-5 font-mono text-secondary">Analyse des performances</span>
+              </div>
+            </div>
+            <a href="https://www.booking.com/hotel/mg/coconut-resort.fr.html" target="_blank" class="btn btn-secondary-custom w-100 font-mono small py-2">
+              Détails du projet <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte Projet 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card-custom h-100 overflow-hidden d-flex flex-column">
+          <div class="project-img-wrapper position-relative">
+            <img src="Images/Mikea.jpeg" class="img-fluid project-img" alt="Zenith Store">
+            <span class="badge bg-card-custom border border-white-10 text-emerald-400 position-absolute top-0 end-0 m-3 font-mono">Mikea lodge</span>
+          </div>
+          <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
+            <div>
+              <h3 class="fs-5 fw-bold text-white mb-2">Receptioniste</h3>
+              <p class="text-secondary small mb-3">Accueillir et accompagner les clients, gérer leurs demandes et assurer un suivi de qualité tout au long de leur séjour.</p>
+              <div class="d-flex flex-wrap gap-1 mb-3">
+                <span class="badge bg-card-custom border border-white-5 font-mono text-secondary">Accueil</span>
+                <span class="badge bg-card-custom border border-white-5 font-mono text-secondary">réservations</span>
+                <span class="badge bg-card-custom border border-white-5 font-mono text-secondary">gestion des demandes et satisfaction client</span>
+              </div>
+            </div>
+            <a href="https://www.mikealodge.com/" target="_blank" class="btn btn-secondary-custom w-100 font-mono small py-2">
+              Détails du projet <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 05. SECTION CONTACT & DEVIS -->
+  <!-- ========================================================================= -->
+  <section id="contact" class="container py-5 mb-5">
+    <div class="mb-5">
+      <h2 class="display-5 fw-bold text-white tracking-tight">Démarrons un <span class="fst-italic text-secondary fw-light">Projet</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <div class="card-custom p-4 p-md-5">
+          <h3 class="fs-5 fw-bold text-white mb-4"><i class="bi bi-chat-text text-blue-400 me-2"></i>Envoyer une demande</h3>
+          
+          <form action="/api/contact" method="POST">
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label for="name" class="form-label font-mono small text-secondary">Nom complet <span class="text-blue-400">*</span></label>
+                <input type="text" id="name" name="name" class="form-control form-control-custom" placeholder="Ex: Claire Martin" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="email" class="form-label font-mono small text-secondary">Adresse Email <span class="text-blue-400">*</span></label>
+                <input type="email" id="email" name="email" class="form-control form-control-custom" placeholder="claire@entreprise.com" required>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-sm-6">
+                <label for="service" class="form-label font-mono small text-secondary">Type de prestation</label>
+                <select id="service" name="service" class="form-select form-select-custom">
+                  <option value="Full-Stack">Community Manager</option>
+                  <option value="UI/UX">Responsable Marketing</option>
+                  <option value="Audit">Assistante Virtuelle</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label for="budget" class="form-label font-mono small text-secondary">Budget envisagé</label>
+                <select id="budget" name="budget" class="form-select form-select-custom">
+                  <option value="< 2.5k">2 000 €</option>
+                  <option value="2.5k - 5k">2 000 - 1 500 €</option>
+                  <option value="5k - 10k">1 500 - 1 000 €</option>
+                  <option value="> 10k">1 000 - 500 €</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="form-label font-mono small text-secondary">Message & Objectifs <span class="text-blue-400">*</span></label>
+              <textarea id="message" name="message" rows="4" class="form-control form-control-custom" placeholder="Présentez brièvement vos besoins..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary-custom w-100 py-3 font-mono fw-bold small">
+              <i class="bi bi-send me-2"></i>Transmettre ma demande
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="d-flex flex-column gap-3">
+          <div class="card-custom p-4">
+            <div class="d-flex align-items-center gap-3">
+              <div class="p-2 rounded-3 bg-card-custom border border-white-10 text-blue-400">
+                <i class="bi bi-envelope fs-5"></i>
+              </div>
+              <div>
+                <span class="text-secondary font-mono small d-block">Adresse Email</span>
+                <a href="mailto:alexandre.dubois.dev@gmail.com" class="text-white fw-bold text-decoration-none">Ralijaonavalerie@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-custom p-4">
+            <div class="d-flex align-items-center gap-3">
+              <div class="p-2 rounded-3 bg-card-custom border border-white-10 text-emerald-400">
+                <i class="bi bi-telephone fs-5"></i>
+              </div>
+              <div>
+                <span class="text-secondary font-mono small d-block">Téléphone Direct</span>
+                <a href="tel:+33612345678" class="text-white fw-bold text-decoration-none">+261 38 06 958 29</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-custom p-4">
+            <div class="d-flex align-items-center gap-3">
+              <div class="p-2 rounded-3 bg-card-custom border border-white-10 text-purple-400">
+                <i class="bi bi-geo-alt fs-5"></i>
+              </div>
+              <div>
+                <span class="text-secondary font-mono small d-block">Localisation</span>
+                <span class="text-white fw-bold">Fianaratsoa 301, Madagascar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap 5 JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

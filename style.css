@@ -1,0 +1,184 @@
+/* ==========================================================================
+   FEUILLE DE STYLE CSS POUR BOOTSTRAP 5 (style.css)
+   Thème : Sleek Interface Sombre & Moderne
+   ========================================================================== */
+
+:root {
+  --bg-dark: #0a0a0a;
+  --card-bg: #111111;
+  --nav-bg: rgba(10, 10, 10, 0.85);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-medium: rgba(255, 255, 255, 0.12);
+  --accent-blue: #3b82f6;
+  --accent-blue-hover: #2563eb;
+  --accent-emerald: #10b981;
+}
+
+body.bg-body-custom {
+  background-color: var(--bg-dark);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Couleurs d'accentuation */
+.text-blue-400 { color: #60a5fa !important; }
+.text-emerald-400 { color: #34d399 !important; }
+.text-purple-400 { color: #c084fc !important; }
+.border-white-5 { border-color: var(--border-subtle) !important; }
+.border-white-10 { border-color: var(--border-medium) !important; }
+
+/* Navbar effet verre fumé */
+.bg-nav-custom {
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Cartes & Conteneurs Sleek */
+.bg-card-custom, .card-custom {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1.25rem;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-custom:hover {
+  border-color: var(--border-medium);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Boutons d'action */
+.btn-primary-custom {
+  background-color: var(--accent-blue);
+  color: #ffffff;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.25);
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--accent-blue-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.btn-secondary-custom {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #d1d5db;
+  border: 1px solid var(--border-medium);
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary-custom:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Champs de formulaires Bootstrap adaptés */
+.form-control-custom, .form-select-custom {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-medium);
+  color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+}
+
+.form-control-custom:focus, .form-select-custom:focus {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: var(--accent-blue);
+  color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgba(59, 130, 246, 0.15);
+}
+
+/* Barres de progression */
+.progress-custom {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bg-blue { background-color: var(--accent-blue) !important; }
+.bg-emerald { background-color: var(--accent-emerald) !important; }
+
+/* Halo lumineux Hero */
+.hero-glow-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+/* Animation pulsation statut */
+.dot-pulse {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulseAnim 2s infinite;
+}
+
+@keyframes pulseAnim {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+/* Images de projets */
+.project-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-custom:hover .project-img {
+  transform: scale(1.05);
+}
+
+#about,#hero,#skills,#projects{
+  scroll-margin-top: 10vh;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-80px);
+    animation: slideIn 5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
